@@ -1,0 +1,20 @@
+/* the box element */
+.box{
+  background-color: white;
+  border: 10px solid yellow;
+  padding: 10px;
+  width: 160px;
+  height: 80px;
+}
+
+/* the box's hover state */
+.box:hover{
+}
+
+/* the second box element */
+.box.two{
+}
+
+/* the second box's hover state */
+.box.two:hover{
+}

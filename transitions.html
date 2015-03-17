@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Transitions</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link href="css/prism.css" media="all" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="css/transitions.css" media="all" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <main>
+      <div class='grid'>
+        <div class='column-12'>
+          <h1>Transitions</h1>
+        </div>
+        <div class='column-6'>
+
+          <section class='horizontal-box'>
+            <div class='box'>box</div>
+            <div class='box two'>box</div>
+          </section>
+
+        </div> <!-- end of column -->
+        <div class='column-6'>
+          <h2>Use this example to experiment with css transitions and hover states.</h2>
+
+          <p>In <a href='css/transitions.css'><code>css/transitions.css</code></a> you'll find css to work with. There are rulesets for the box's inactive and hover states.</p>
+
+          <p>First you need to add some rules to the <code>:hover</code> state to change the box's styles.</p>
+
+          <h4>some css properties to experiment with...</h4>
+<pre class='language-css'><code>
+opacity: 0.5;
+color: green;
+background-color: #c30;
+font-size: 32px;
+transform: scale(0.8,0.8);
+transform: skew(15deg,15deg);
+transform: rotate(15deg);
+</code></pre>
+        
+        <p>Next, add a css transition. Experiment with changing the various properties to create different transition styles.</p>
+<pre class='language-css'><code>
+transition-property: all;
+transition-duration: 750ms;
+transition-timing-function: ease-in;
+transition-delay: 500ms;
+</code></pre>
+
+        </div>
+      </div>
+      
+    </main>
+    <script type="text/javascript" src="js/prism.js"></script>
+  </body>
+</html>
