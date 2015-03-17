@@ -21,34 +21,92 @@
 
           <section>
             <div class='box'>box</div>
-            <a id='button' class='action'>test</a>
+            <a id='button' class='action'>apply</a>
           </section>
 
         </div> <!-- end of column -->
         <div class='column-6'>
           <h2>Use this example to experiment with css animations.</h2>
 
-          <p>In <a href='css/transitions.css'><code>css/animations.css</code></a> you'll find css to work with. There are rulesets for the box's inactive and hover states.</p>
+          <p>In <a href='css/transitions.css'><code>css/animations.css</code></a> you'll find css to work with. There are rulesets for the box's active (animating) and default states.</p>
+      
+          <p>Work with the .css in <code>css/animations.css</code>.</p>
 
-          <p>First you need to add some rules to the <code>:hover</code> state to change the box's styles.</p>
+           <h2>Part 01, create your own keyframe animation</h2>
+          <p>At the bottom of the file you'll find some example <code>@keyframe</code> animations to experiment with.</p>
 
-          <h4>some css properties to experiment with...</h4>
+          <h4>An example keyframe animation looks like this...</h4>
 <pre class='language-css'><code>
-opacity: 0.5;
-color: green;
-background-color: #c30;
-font-size: 32px;
-transform: scale(0.8,0.8);
-transform: skew(15deg,15deg);
-transform: rotate(15deg);
+@-webkit-keyframes wiggle {
+  0% {
+    transform: rotate(20deg);
+  }
+  100% {
+    transform: rotate(-20deg);
+  }
+}
 </code></pre>
+
+        <p>Use these examples as a guide to create your own.</p>
+
+        <h2>Part 02, apply that animation to the box.</h2>
         
-        <p>Next, add a css transition. Experiment with changing the various properties to create different transition styles.</p>
+        <p>Use the <mark>_animation</mark> snippet to apply the css animation properties to the box's css. Toggle the <code>apply</code> button to toggle the animation on and off.</p> 
+        
+        <h4>The css animation snippet output will look like this...</h4>
 <pre class='language-css'><code>
-transition-property: all;
-transition-duration: 750ms;
-transition-timing-function: ease-in;
-transition-delay: 500ms;
+
+/*
+ * Name specifies the keyframe animation to apply
+ */ 
+-webkit-animation-name : keyframes;
+        animation-name : keyframes;
+
+/*
+ * Duration specifies the length of time it
+ * takes to complete a single animation cycle.
+ * Options are seconds or milliseconds (ex. 1.5s or 1500ms)
+ */     
+-webkit-animation-duration : 0.5s;
+        animation-duration : 0.5s;
+
+/*
+ * The number of times an animation cycle will repeat before stopping.
+ * Options are positive whole numbers, decimals and infinite.
+ */
+-webkit-animation-iteration-count : 1;
+        animation-iteration-count : 1;
+
+/*
+ * The delay before the animation starts.
+ * Options are seconds or milliseconds (ex. 1.5s or 1500ms)
+ */
+-webkit-animation-delay : 1.5s;
+        animation-delay : 1.5s;
+
+/*
+ * Direction indicates whether the animation should play 
+ * in reverse on alternate cycles.
+ * Options are normal, reverse, alternate, alternate-reverse
+ */
+-webkit-animation-direction : reverse;
+        animation-direction : reverse;
+
+/*
+ * The timing function defines the style of progression
+ * Options are documented here https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timing-function
+ */
+-webkit-animation-timing-function : linear;
+        animation-timing-function : linear;
+
+/*
+ * Plays or pauses an animation
+ * Options are running or paused
+ */
+-webkit-animation-play-state : running;
+        animation-play-state : running;
+
+
 </code></pre>
 
         </div>

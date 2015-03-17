@@ -1,20 +1,80 @@
+/*
+  Common css property:value pairs
+  --------------------------------
+
+  font-size: 16px;
+  font-weight: bold;
+  font-style: italic;
+  line-height : 1.5;
+
+  color: #c30;
+  background-color: #f90;
+
+  display: none;
+  opacity: 0.5;
+
+  margin: 10px 20px 30px 40px;
+  padding: 10px 20px 30px 40px;
+  border: 1px solid #222;
+  border-radius: 4px;
+  width: 200px;
+  height: 200px;
+  
+  transform : scale(0.5,0.6);
+  transform : rotate(90deg);
+
+*/
+
 /* the box element */
 .box{
   background-color: white;
   border: 10px solid yellow;
   padding: 10px;
   width: 160px;
-  height: 80px;
+  height: 80px;  
+  
 }
 
-/* the box's hover state */
-.box:hover{
+.active .box{
+  
 }
 
-/* the second box element */
-.box.two{
+/* button press animation
+//------------------------------------*/
+@-webkit-keyframes buttonPress {
+  0% {
+    transform : scale(1,1);
+  }
+  100% {
+    transform: scale(0.95,0.95);
+  }
 }
 
-/* the second box's hover state */
-.box.two:hover{
+/* wiggle animation
+//------------------------------------*/
+@-webkit-keyframes wiggle {
+  0% {
+    transform: rotate(20deg);
+  }
+  100% {
+    transform: rotate(-20deg);
+  }
+}
+
+/* rotate animation
+//------------------------------------*/
+@-webkit-keyframes rotate {
+  0%{  
+    transform: rotate(0deg);
+  }
+  100% { 
+    transform: rotate(360deg);
+  }
+}
+
+/* pulse animation
+//------------------------------------ */
+@-webkit-keyframes pulse {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
 }

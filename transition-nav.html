@@ -14,6 +14,7 @@
   </head>
   <body>
     <nav>
+
       <ul class='horizontal-box'>
         <li>Item 01</li>
         <li>Item 02</li>
@@ -21,13 +22,19 @@
         <li>Item 04</li>
       </ul>
 
-      <div class='horizontal-box'>
+      <div class='horizontal-box search-box'>
         <i class="fa fa-search"></i>
         <input value='search' type='text' placeholder='search' />
       </div>
+
     </nav>
     <main>
-      
+      <h1>Navigation Styling</h1>
+      <p>This nav has two states. First is the default state that appears when the page hasn't scrolled. Once the page is scrolled more than 100px, the nav switches to its <code>scroll</code> state.</p>
+
+      <p>Trying giving the default and scrolled states some style variations. Then experiment with using the <mark>_transition</mark> snippet to apply various transitions to the nav.</p> 
+
+      <p>The <code>css/transition-nav.css</code> file has the css you need for this exercise.</p>
     </main>
     <script title="jQuery CDN" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/transition-nav.js"></script>

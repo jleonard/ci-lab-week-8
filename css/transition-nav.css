@@ -1,12 +1,39 @@
+/*
+  Common css property:value pairs
+  --------------------------------
+
+  font-size: 16px;
+  font-weight: bold;
+  font-style: italic;
+  line-height : 1.5;
+
+  color: #c30;
+  background-color: #f90;
+
+  display: none;
+  opacity: 0.5;
+
+  margin: 10px 20px 30px 40px;
+  padding: 10px 20px 30px 40px;
+  border: 1px solid #222;
+  border-radius: 4px;
+  width: 200px;
+  height: 200px;
+
+
+*/
+
 main{
   min-height: 4000px;
+  padding-top: 200px;
 }
 
 nav{
   background-color: #d6d6d6;
+  padding: 20px 40px;
   width: 100%;
   position: fixed;
-  padding: 20px 40px;
+  top: 0;
 }
 
 nav ul{
@@ -19,6 +46,12 @@ nav ul li{
   cursor: pointer;
 }
 
-.scroll nav{
+nav .search-box{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
 
+.scroll nav{
+  background-color: #e6e6e6;
 }
